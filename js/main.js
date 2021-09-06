@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // slick slider
   $(".information__slider").slick({
     infinite: true,
     slidesToShow: 1,
@@ -6,7 +7,9 @@ $(document).ready(function () {
     arrows: false,
     dots: true,
   });
+  $('.slick-dots').appendTo('.content');
 
+  // set height 
   var toolsHeight = $('.tools').innerHeight();
   var phoneHeight = $('.phone').innerHeight();
   var fixedHeight = $('.fixed').innerHeight();
@@ -20,4 +23,5 @@ $(document).ready(function () {
   else if(fixedHeight) {
     $('.content').css({"height": `calc(100vh - ${(phoneHeight + fixedHeight)/100}rem)` })
   }
+  
 });
