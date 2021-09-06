@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>UNIREALCHAIN</title>
+  <link rel="stylesheet" href="/css/common/slick.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/common/jquery-3.6.0.min.js"></script>
+  <script src="/js/common/slick.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: [
+          'Lexend:100,200,300,400,500,600,700&display=swap'
+        ]
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <div class="phone">
+    <div class="phone__time">16:11</div>
+    <ul class="phone__setting">
+      <li><img src="/images/icon_network.png" alt="network" class="phone__network"></li>
+      <li><img src="/images/icon_wifi.png" alt="wifi" class="phone__wifi"></li>
+      <li><img src="/images/icon_power.png" alt="power" class="phone__power"></li>
+    </ul>
+  </div>
+  <div class="tools">
+    <a href="#" class="button-notify"></a>
+    <form action="">
+      <input type="search" name="search" class="search" placeholder="Tìm kiếm mọi thứ">
+    </form>
+    <a href="#" class="button-swap"></a>
+  </div>
+  <div class="content">
+    <div class="wallet">
+      <h2 class="wallet__title">
+        <span class="wallet__money">239,41 $</span>
+        <span class="wallet__small">Ví chính</span>
+      </h2>
+      <ul class="wallet__function">
+        <li>
+          <a href="#">
+            <div class="wallet__icon">
+              <img src="/images/icon_receive.png" alt="Nhận">
+            </div>
+            <p>Nhận</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="wallet__icon">
+              <img src="/images/icon_send.png" alt="Gửi">
+            </div>
+            <p>Gửi</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="wallet__icon">
+              <img src="/images/icon_buy.png" alt="Mua">
+            </div>
+            <p>Mua</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="transaction">
+      <ul class="transaction__list">
+        <li>
+          <div class="transaction__icon">
+            <img src="/images/icon_bitcoin.png" alt="bitcoin">
+          </div>
+          <div class="transaction__detail">
+            <h3 class="transaction__title">Bitcoin</h3>
+            <div class="transaction__number">
+              <span class="transaction__money">47.133,21 $</span>
+              <span class="transaction__change transaction__change--down">-0.07%</span>
+            </div>
+          </div>
+          <div class="transaction__sign">0 BTC</div>
+        </li>
+        <li>
+          <div class="transaction__icon">
+            <img src="/images/icon_ethereum.png" alt="Ethereum">
+          </div>
+          <div class="transaction__detail">
+            <h3 class="transaction__title">Ethereum</h3>
+            <div class="transaction__number">
+              <span class="transaction__money">3.111,21 $</span>
+              <span class="transaction__change transaction__change--down">-0.35%</span>
+            </div>
+          </div>
+          <div class="transaction__sign">0 ETH</div>
+        </li>
+        <li>
+          <div class="transaction__icon">
+            <img src="/images/icon_bnb_01.png" alt="BNB">
+          </div>
+          <div class="transaction__detail">
+            <h3 class="transaction__title">BNB</h3>
+            <div class="transaction__number">
+              <span class="transaction__money">457,56 $</span>
+              <span class="transaction__change transaction__change--down">-2.13%</span>
+            </div>
+          </div>
+          <div class="transaction__sign">0 BNB</div>
+        </li>
+        <li>
+          <div class="transaction__icon">
+            <img src="/images/icon_bnb_02.png" alt="BNB">
+          </div>
+          <div class="transaction__detail">
+            <h3 class="transaction__title">BNB</h3>
+            <div class="transaction__number">
+              <span class="transaction__money">457,56 $</span>
+              <span class="transaction__change transaction__change--down">-2.13%</span>
+            </div>
+          </div>
+          <div class="transaction__sign">0 BNB</div>
+        </li>
+        <li>
+          <div class="transaction__icon">
+            <img src="/images/icon_unr.png" alt="UNR">
+          </div>
+          <div class="transaction__detail">
+            <h3 class="transaction__title">UNR</h3>
+            <div class="transaction__number">
+              <span class="transaction__money">457,56 $</span>
+              <span class="transaction__change transaction__change--up">+2.13%
+              </span>
+            </div>
+          </div>
+          <div class="transaction__sign">0 UNR</div>
+        </li>
+      </ul>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal__content">
+        <a href="#" class="modal__close"></a>
+        <div class="modal__image modal__image--01">
+          <img src="/images/img_04.png" alt="Ví của bạn đã được nhập thành công đã xong.">
+        </div>
+        <p class="modal__text">Ví của bạn đã được nhập<br>thành công đã xong.</p>
+        <a href="#" class="button button--main">Đồng ý</a>
+      </div>
+    </div>
+  </div>
+  <div class="fixed fixed--menu">
+    <div class="menu">
+      <ul class="menu__list">
+        <li>
+          <a href="#" class="menu__item menu__item--card menu__item--card-active">
+            <span>Ví</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu__item menu__item--change">
+            <span>Gửi nhận</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu__item menu__item--cart">
+            <span>Mua</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu__item menu__item--setting">
+            <span>Cài đặt</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+</body>
+
+</html>
