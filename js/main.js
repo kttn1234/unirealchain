@@ -23,5 +23,16 @@ $(document).ready(function () {
   else if(fixedHeight) {
     $('.content').css({"height": `calc(100vh - ${(phoneHeight + fixedHeight)/100}rem)` })
   }
-  
+  // modal
+  $('.modal__close').click(function(){
+    $(".modal").fadeOut();
+  })
+  $('.checkbox-agree').change(function() {
+    if(this.checked) {
+      $('.button--main').removeClass('button--disable')
+    }
+    else {
+      $('.button--main').addClass('button--disable')
+    }
+  });
 });
