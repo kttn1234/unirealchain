@@ -521,13 +521,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 2.77rem;
   -webkit-transform: translate(-50%,-50%);
   -moz-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   -o-transform: translate(-50%,-50%);
 }
-
+.logo img {
+  width: 2.77rem;
+  margin: auto;
+}
 /* information */
 .information__slider {
   position: absolute;
@@ -549,16 +551,25 @@ body {
   padding-bottom: .35rem;
 }
 .information__image--01 {
-  width: 2.77rem;
   margin: auto auto .2rem;
 }
+.information__image--01 img {
+  width: 2.77rem;
+  margin: auto;
+}
 .information__image--02 {
-  width: 2.6rem;
   margin: auto auto .61rem;
 }
+.information__image--02 img {
+  width: 2.6rem;
+  margin: auto;
+}
 .information__image--03 {
-  width: 2.42rem;
   margin: auto auto .21rem;
+}
+.information__image--03 img {
+  width: 2.42rem;
+  margin: auto;
 }
 .information__slider .text-main {
   padding-top: .05rem;
