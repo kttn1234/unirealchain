@@ -229,11 +229,11 @@ textarea {
  * ----------------------------------------------- */
  @font-face {
   font-family: 'SF Pro Display';
-  src: url('/font/SFProDisplay-Regular.eot');
-  src: url('/font/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-      url('/font/SFProDisplay-Regular.woff2') format('woff2'),
-      url('/font/SFProDisplay-Regular.woff') format('woff'),
-      url('/font/SFProDisplay-Regular.ttf') format('truetype');
+  src: url('../font/SFProDisplay-Regular.eot');
+  src: url('../font/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../font/SFProDisplay-Regular.woff2') format('woff2'),
+      url('../font/SFProDisplay-Regular.woff') format('woff'),
+      url('../font/SFProDisplay-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -241,11 +241,11 @@ textarea {
 
 @font-face {
   font-family: 'SVN-Gilroy';
-  src: url('/font/SVN-GilroyBold.eot');
-  src: url('/font/SVN-GilroyBold.eot?#iefix') format('embedded-opentype'),
-      url('/font/SVN-GilroyBold.woff2') format('woff2'),
-      url('/font/SVN-GilroyBold.woff') format('woff'),
-      url('/font/SVN-GilroyBold.ttf') format('truetype');
+  src: url('../font/SVN-GilroyBold.eot');
+  src: url('../font/SVN-GilroyBold.eot?#iefix') format('embedded-opentype'),
+      url('../font/SVN-GilroyBold.woff2') format('woff2'),
+      url('../font/SVN-GilroyBold.woff') format('woff'),
+      url('../font/SVN-GilroyBold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -253,11 +253,11 @@ textarea {
 
 @font-face {
   font-family: 'SVN-Gilroy';
-  src: url('/font/SVN-GilroyLight.eot');
-  src: url('/font/SVN-GilroyLight.eot?#iefix') format('embedded-opentype'),
-      url('/font/SVN-GilroyLight.woff2') format('woff2'),
-      url('/font/SVN-GilroyLight.woff') format('woff'),
-      url('/font/SVN-GilroyLight.ttf') format('truetype');
+  src: url('../font/SVN-GilroyLight.eot');
+  src: url('../font/SVN-GilroyLight.eot?#iefix') format('embedded-opentype'),
+      url('../font/SVN-GilroyLight.woff2') format('woff2'),
+      url('../font/SVN-GilroyLight.woff') format('woff'),
+      url('../font/SVN-GilroyLight.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -301,7 +301,7 @@ body {
   line-height: 1.363;
 }
 .title-main--setting {
-  margin-top: .02rem;
+  margin-top: .1rem;
   margin-bottom: .09rem;
   font-size: .19rem;
 }
@@ -322,18 +322,20 @@ body {
   display: block;
   background: #fff;
   font-family: 'SVN-Gilroy';
+  display: block;
+  width: 100%;
 }
 .button--main {
   background: #3b82f6;
   border-radius: .06rem;
-  color: #fff;
+  color: #F9FAFB;
 }
 .button--white {
   height: auto;
   line-height: normal;
 }
 .button--disable {
-  opacity: .5;
+  background: #BFDBFE;
 }
 .button + .button {
   margin-top: .12rem;
@@ -349,12 +351,12 @@ body {
   font-size: .12rem;
   display: flex;
   justify-content: center;
-  margin-top: .21rem;
+  margin: .21rem auto auto;
 }
 .button-back::before {
   content: '';
   display: inline-block;
-  background: url(/images/icon_arrow_back.png) center no-repeat;
+  background: url(../images/icon_arrow_back.png) center no-repeat;
   width: .09rem;
   height: .15rem;
   background-size: .09rem auto;
@@ -365,7 +367,7 @@ body {
   position: absolute;
 }
 .button-info {
-  background: url(/images/icon_info.png) no-repeat;
+  background: url(../images/icon_info.png) no-repeat;
   width: .19rem;
   height: .19rem;
   background-size: .19rem;
@@ -377,19 +379,19 @@ body {
   background-size: .12rem auto;
 }
 .button-notify {
-  background: url(/images/icon_notify.png) no-repeat;
+  background: url(../images/icon_notify.png) no-repeat;
   width: .17rem;
   height: .19rem;
   background-size: .17rem auto;
 }
 .button-swap {
-  background: url(/images/icon_swap.png) no-repeat;
+  background: url(../images/icon_swap.png) no-repeat;
   width: .23rem;
   height: .14rem;
   background-size: .23rem auto;
 }
 .button-plus {
-  background: url(/images/icon_plus.png) no-repeat;
+  background: url(../images/icon_plus.png) no-repeat;
   width: .07rem;
   height: .07rem;
   background-size: .07rem auto;
@@ -464,9 +466,9 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  top: .45rem;
+  top: 0;
   width: 100%;
-  padding: 0 .15rem .1rem;
+  padding: .1rem .15rem;
   align-items: center;
 }
 .tools .title-main {
@@ -643,7 +645,7 @@ body {
   flex-wrap: wrap;
   font-weight: bold;
 }
-.list-phrase li a {
+.list-phrase li button {
   border: .01rem solid #9ea3ae;
   border-radius: .09rem;
   padding: .03rem .07rem;
@@ -652,7 +654,7 @@ body {
 .list-phrase li {
   padding: .07rem .06rem;
 }
-.list-phrase--disable li a{
+.list-phrase--disable li button {
   border: .01rem solid #e5e5e6;
   color: #fff;
 }
@@ -661,7 +663,7 @@ body {
   max-width: 4.5rem;
   margin: .24rem -0.06rem auto;
 }
-.list-phrase--number a{
+.list-phrase--number button {
   color: #000;
 }
 .list-phrase--number {
@@ -670,7 +672,7 @@ body {
 .list-phrase--number li {
   display: table-row;
 }
-.list-phrase--number li a:before {
+.list-phrase--number li button:before {
   white-space: nowrap;
   content: counter(number);
   counter-increment: number;
@@ -681,10 +683,10 @@ body {
 .list-phrase--full {
   margin: .17rem -0.06rem auto;
 }
-.list-phrase--full a {
+.list-phrase--full button {
   color: #9ea3ae;
 }
-.list-phrase--full li a {
+.list-phrase--full li button {
   padding: .03rem .06rem;
 }
 .panel .list-phrase--number{
@@ -710,7 +712,7 @@ body {
 }
 .warning::before {
   content: '';
-  background: url(/images/icon_warning.png) no-repeat center;
+  background: url(../images/icon_warning.png) no-repeat center;
   width: .15rem;
   height: .15rem;
   background-size: .15rem auto;
@@ -749,7 +751,7 @@ body {
 }
 .error:before {
   content: '';
-  background: url(/images/icon_info_warning.png) no-repeat center;
+  background: url(../images/icon_info_warning.png) no-repeat center;
   width: .16rem;
   height: .16rem;
   background-size: .16rem auto;
@@ -758,12 +760,12 @@ body {
 }
 .menu {
   background: #273679;
-  padding: .16rem 0 .2rem;
+  padding: .16rem 0 .21rem;
   position: relative;
 }
 .menu::before {
   content: '';
-  background: url(/images/icon_unr.png) no-repeat;
+  background: url(../images/icon_unr.png) no-repeat;
   width: .4rem;
   height: .4rem;
   background-size: .4rem auto;
@@ -794,9 +796,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.menu__list a {
-  color: #fff;
-}
 .menu__item {
   display: inline-block;
   text-align: center;
@@ -805,6 +804,7 @@ body {
   margin-top: .05rem;
   display: block;
   font-size: .09rem;
+  color: #fff;
 }
 .menu__item::before {
   content: '';
@@ -812,63 +812,63 @@ body {
   margin: auto;
 }
 .menu__item--card::before {
-  background-image: url(/images/icon_card_off.png);
+  background-image: url(../images/icon_card_off.png);
   width: .26rem;
   height: .2rem;
   background-size: .26rem auto;
 }
 .menu__item--card-active::before {
-  background-image: url(/images/icon_card_on.png);
+  background-image: url(../images/icon_card_on.png);
 }
 .menu__item--card-active span {
   color: #3b82f6;
 }
 .menu__item--change::before {
-  background-image: url(/images/icon_change.png);
+  background-image: url(../images/icon_change.png);
   width: .25rem;
   height: .21rem;
   background-size: .25rem auto;
 }
 .menu__item--cart::before {
-  background-image: url(/images/icon_cart.png);
+  background-image: url(../images/icon_cart.png);
   width: .23rem;
   height: .2rem;
   background-size: .23rem auto;
 }
 .menu__item--setting::before {
-  background-image: url(/images/icon_setting_off.png);
+  background-image: url(../images/icon_setting_off.png);
   width: .2rem;
   height: .2rem;
   background-size: .2rem auto;
 }
 .menu__item--setting-active::before {
-  background-image: url(/images/icon_setting_on.png);
+  background-image: url(../images/icon_setting_on.png);
 }
 .menu__item--setting-active span {
   color: #3b82f6;
 }
 .wallet {
   background: #3b82f6;
-  color: #fff;
   text-align: center;
-  padding: .24rem .1rem .13rem;
-  margin: .27rem .2rem .23rem;
+  padding: .24rem .1rem .12rem;
+  margin: .15rem .2rem .23rem;
   border-radius: .15rem;
 }
 .wallet__title {
   margin-bottom: .22rem;
-  color: #fff;
 }
 .wallet__money {
   font-size: .23rem;
   display: block;
   line-height: 1.3;
   font-family: 'SVN-Gilroy';
+  color: #F9FAFB;
 }
 .wallet__small {
   font-size: .13rem;
   display: block;
   font-weight: 100;
+  color: #DFDFDF;
 }
 .wallet__function {
   display: flex;
@@ -882,7 +882,12 @@ body {
 }
 .wallet__icon {
   width: .32rem;
-  margin-bottom: .03rem;
+  display: block;
+  margin-bottom: -0.01rem;
+}
+.wallet__text {
+  font-size: .1rem;
+  color: #F9FAFB;
 }
 .transaction {
   padding-bottom: 1rem;
@@ -931,19 +936,20 @@ body {
 .setting {
   font-family: 'SVN-Gilroy';
 }
-.setting__list li a {
+.setting__list li button {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  width: 100%;
 }
 
-.setting__list--main li a {
+.setting__list--main li button {
   padding: .03rem .3rem .03rem .1rem;
 }
-.setting__list--main li a::after {
+.setting__list--main li button::after {
   content: '';
-  background: url(/images/icon_arrow_right.png) no-repeat;
+  background: url(../images/icon_arrow_right.png) no-repeat;
   position: absolute;
   width: .09rem;
   height: .09rem;
@@ -958,8 +964,11 @@ body {
 .setting__list--hobby li + li {
   margin-top: .19rem;
 }
-.setting__list--hobby li a {
+.setting__list--hobby li button {
   padding: .14rem .25rem .14rem .1rem;
+}
+.setting__title {
+  text-align: left;
 }
 .setting__image {
   width: .4rem;
@@ -991,22 +1000,20 @@ body {
   margin-top: .32rem;
   margin-bottom: .11rem;
 }
-.setting__list--info {
-  padding: 0 .1rem;
-}
-.setting__list--info li a {
+
+.setting__list--info li button {
   padding-right: .2rem;
-  padding: .05rem .3rem .05rem 0;
+  padding: .05rem .3rem .05rem .1rem;
 }
-.setting__list--info li a::after {
+.setting__list--info li button::after {
   content: '';
-  background: url(/images/icon_info.png) no-repeat;
+  background: url(../images/icon_info.png) no-repeat;
   position: absolute;
   width: .12rem;
   height: .12rem;
   background-size: .12rem auto;
   display: inline-block;
-  right: -0.01rem;
+  right: .08rem;
 }
 .setting__list--info .setting__image {
   width: .37rem;
@@ -1019,7 +1026,7 @@ body {
   padding-top: .4rem;
   padding-bottom: .08rem;
 }
-.setting__list--switch li a {
+.setting__list--switch li button {
   padding: .14rem .08rem .14rem .1rem;
 }
 /* modal */
@@ -1033,7 +1040,7 @@ body {
   right: 0;
   margin: auto;
   z-index: 0;
-  top: 1.15rem;
+  top: 1.03rem;
 }
 .modal__image--01 {
   width: 2.14rem;
@@ -1049,7 +1056,7 @@ body {
   padding: .4rem .15rem .13rem;
 }
 .modal__close {
-  background: url(/images/icon_close.png) no-repeat;
+  background: url(../images/icon_close.png) no-repeat;
   width: .2rem;
   height: .2rem;
   background-size: .2rem auto;
