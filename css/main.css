@@ -1197,6 +1197,7 @@ body {
 .setting__title {
   text-align: left;
   flex: 1;
+  font-weight: 500;
 }
 .setting__image {
   width: .4rem;
