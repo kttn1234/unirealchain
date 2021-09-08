@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="format-detection" content="telephone=no">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=375" />
   <title>UNIREALCHAIN</title>
@@ -18,42 +18,53 @@
 
 <body>
   <div class="tools">
-    <button class="button-back">Cài đặt</button>
-    <h2 class="title-main">WalletConnect</h2>
-    <button class="button-info button-info--small"></button>
+    <div class="tools__group tools__group--left">
+      <button class="button-back">Nhận</button>
+      <h2 class="title-main">Nhận BTC</h2>
+    </div>
+    <form action="" class="form-search">
+      <input type="search" name="search" class="form-search__input form-search__input--exchange" placeholder="Tìm kiếm">
+    </form>
   </div>
   <div class="content">
-    <div class="setting">
-      <p class="setting__text02">Kết nối ví của bạn bằng WalletConnect để thực hiện giao dịch</p>
-      <button class="button button--main">Kết nối mới</button>
-    </div>
-  </div>
-  <div class="fixed fixed--menu">
-    <div class="menu">
-      <ul class="menu__list">
+    <div class="receive">
+      <div class="receive__logo">
+        <img src="./images/logo.png" alt="UNIREALCHAIN">
+      </div>
+      <div class="receive__image">
+        <img src="./images/img_qrcode.png" alt="qrcode">
+      </div>
+      <p class="text-gray">fghiu278894ndw&GUg9fisf8fjiwfiqp<br>84JIUFjfiasfhlfsajik</p>
+      <p class="receive__text">Chỉ gửi Bitcoi (BTC) đến địa chỉ này.<br>Gửi các loại tiền mã hóa khác vào địa chỉ đó có thể<br>làm bạn mất tiền vĩnh viễn</p>
+      <ul class="receive__tools">
         <li>
-          <button class="menu__item menu__item--card">
-            <span>Ví</span>          
+          <button>
+            <span class="receive__tools-icon">
+              <img src="./images/icon_copy_blue.png" alt="Sao chép">
+            </span>
+            <span class="receive__tools-text">Sao chép</span>
           </button>
         </li>
         <li>
-          <button class="menu__item menu__item--change">
-            <span>Gửi nhận</span>
+          <button>
+            <span class="receive__tools-icon">
+              <img src="./images/icon_count.png" alt="Nhập số lượng">
+            </span>
+            <span class="receive__tools-text">Nhập số lượng</span>
           </button>
         </li>
         <li>
-          <button class="menu__item menu__item--cart">
-            <span>Mua</span>
-          </button>
-        </li>
-        <li>
-          <button class="menu__item menu__item--setting menu__item--setting-active">
-            <span>Cài đặt</span>
+          <button>
+            <span class="receive__tools-icon">
+              <img src="./images/icon_share.png" alt="Chia sẻ">
+            </span>
+            <span class="receive__tools-text">Chia sẻ</span>
           </button>
         </li>
       </ul>
     </div>
   </div>
+  
 </body>
 
 </html>

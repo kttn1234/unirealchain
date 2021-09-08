@@ -18,11 +18,13 @@
 
 <body>
   <div class="tools">
-    <button class="button-notify"></button>
-    <form action="">
-      <input type="search" name="search" class="search" placeholder="Tìm kiếm mọi thứ">
-    </form>
-    <button class="button-swap"></button>
+    <div class="tools__group">
+      <button class="button-notify"></button>
+      <form action="" class="form-search">
+        <input type="search" name="search" class="form-search__input form-search__input--main" placeholder="Tìm kiếm mọi thứ">
+      </form>
+      <button class="button-swap"></button>
+    </div>
   </div>
   <div class="content">
     <div class="wallet">
@@ -67,7 +69,7 @@
             <h3 class="transaction__title">Bitcoin</h3>
             <div class="transaction__number">
               <span class="transaction__money">47.133,21 $</span>
-              <span class="transaction__change transaction__change--down">-0.07%</span>
+              <span class="transaction__change text-red">-0.07%</span>
             </div>
           </div>
           <div class="transaction__sign">0 BTC</div>
@@ -80,7 +82,7 @@
             <h3 class="transaction__title">Ethereum</h3>
             <div class="transaction__number">
               <span class="transaction__money">3.111,21 $</span>
-              <span class="transaction__change transaction__change--down">-0.35%</span>
+              <span class="transaction__change text-red">-0.35%</span>
             </div>
           </div>
           <div class="transaction__sign">0 ETH</div>
@@ -93,7 +95,7 @@
             <h3 class="transaction__title">BNB</h3>
             <div class="transaction__number">
               <span class="transaction__money">457,56 $</span>
-              <span class="transaction__change transaction__change--down">-2.13%</span>
+              <span class="transaction__change text-red">-2.13%</span>
             </div>
           </div>
           <div class="transaction__sign">0 BNB</div>
@@ -106,7 +108,7 @@
             <h3 class="transaction__title">BNB</h3>
             <div class="transaction__number">
               <span class="transaction__money">457,56 $</span>
-              <span class="transaction__change transaction__change--down">-2.13%</span>
+              <span class="transaction__change text-red">-2.13%</span>
             </div>
           </div>
           <div class="transaction__sign">0 BNB</div>
@@ -119,7 +121,7 @@
             <h3 class="transaction__title">UNR</h3>
             <div class="transaction__number">
               <span class="transaction__money">457,56 $</span>
-              <span class="transaction__change transaction__change--up">+2.13%
+              <span class="transaction__change text-green">+2.13%
               </span>
             </div>
           </div>

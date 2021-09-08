@@ -12,13 +12,20 @@ $(document).ready(function () {
   // set height 
   var toolsHeight = $('.tools').innerHeight();
   var fixedHeight = $('.fixed').innerHeight();
-  $('body').css({"padding-bottom": `${fixedHeight/100}rem`});
+  
   $('.content').css({"height": `calc(100vh)` })
+  
   if(toolsHeight && fixedHeight ) {
     $('body').css({"padding-top": `${(toolsHeight)/100}rem`});
+    $('body').css({"padding-bottom": `${fixedHeight/100}rem`});
     $('.content').css({"height": `calc(100vh - ${(toolsHeight + fixedHeight)/100}rem)` })
   }
+  else if(toolsHeight) {
+    $('body').css({"padding-top": `${(toolsHeight)/100}rem`});
+    $('.content').css({"height": `calc(100vh - ${(toolsHeight)/100}rem)` })
+  }
   else if(fixedHeight) {
+    $('body').css({"padding-bottom": `${fixedHeight/100}rem`});
     $('.content').css({"height": `calc(100vh - ${(fixedHeight)/100}rem)` })
   }
   // modal
@@ -33,4 +40,19 @@ $(document).ready(function () {
       $('.button--main').addClass('button--disable')
     }
   });
+  // form
+  // if('.form-send__input')
+  if( $('.form-send__input').val() ) {
+    $('.form-send__group').addClass('focused');
+  }
+  $('.form-send__input').focus(function(){
+    $(this).parents('.form-send__group').addClass('focused');
+  });
+  
+  $('.form-send__input').blur(function(){
+    var inputValue = $(this).val();
+    if ( inputValue == "" ) {
+      $(this).parents('.form-send__group').removeClass('focused');  
+    } 
+  }) 
 });

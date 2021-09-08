@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="format-detection" content="telephone=no">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=375" />
   <title>UNIREALCHAIN</title>
@@ -18,54 +18,42 @@
 
 <body>
   <div class="tools">
-    <button class="button-back">Cài đặt</button>
-    <h2 class="title-main">Các sở thích</h2>
-    <button class="button-plus"></button>
+    <div class="tools__group">
+      <button class="button-back">Gửi BNB</button>
+      <h2 class="title-main">Chuyển</h2>
+      <button class="button-setting"></button>
+    </div>
   </div>
   <div class="content">
-    <div class="setting">
-      <ul class="setting__list setting__list--main setting__list--hobby">
+    <div class="transfer">
+      <h3 class="transfer__title"><span class="transfer__down">-0,001 BNB</span><span class="transfer__money">0,47 $</span></h3>
+      <ul class="transfer__info">
         <li>
-          <button>
-            <h3 class="setting__title">Tiền tệ</h3>
-            <span class="setting__sub">USD - Đô la Mỹ</span>
-          </button>
+          <p class="transfer__name">Tài sản</p>
+          <p class="transfer__text">Smart Chain (BNB)</p>
         </li>
         <li>
-          <button>
-            <h3 class="setting__title">Gửi và nhận</h3>
-            <span class="setting__sub">Tiếng Việt</span>
-          </button>
+          <p class="transfer__name">Từ</p>
+          <p class="transfer__text">Ví chính (0xbcDE0...07d2907)</p>
+        </li>
+        <li>
+          <p class="transfer__name">Đến</p>
+          <p class="transfer__text">(0xbcDE0...07d3D12)</p>
+        </li>
+      </ul>
+      <ul class="transfer__info">
+        <li>
+          <p class="transfer__name transfer__name--icon">Phí mạng</p>
+          <p class="transfer__text">0,000105 BNB (0,04 $)</p>
+        </li>
+        <li>
+          <p class="transfer__name">Tổng số tối đa</p>
+          <p class="transfer__text text-black">0,52 $</p>
         </li>
       </ul>
     </div>
   </div>
-  <div class="fixed fixed--menu">
-    <div class="menu">
-      <ul class="menu__list">
-        <li>
-          <button class="menu__item menu__item--card">
-            <span>Ví</span>
-          </button>
-        </li>
-        <li>
-          <button class="menu__item menu__item--change">
-            <span>Gửi nhận</span>
-          </button>
-        </li>
-        <li>
-          <button class="menu__item menu__item--cart">
-            <span>Mua</span>
-          </button>
-        </li>
-        <li>
-          <button class="menu__item menu__item--setting">
-            <span>Cài đặt</span>
-          </button>
-        </li>
-      </ul>
-    </div>
-  </div>
+  
 </body>
 
 </html>
