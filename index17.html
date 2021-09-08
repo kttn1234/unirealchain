@@ -17,31 +17,34 @@
 </head>
 
 <body>
-  <div class="tools">
+  <div class="tools bg-white">
     <div class="tools__group">
       <button class="button-back">Gửi</button>
       <h2 class="title-main">Gửi BNB</h2>
       <button class="button-text button--done">Tiếp theo</button>
     </div>
   </div>
-  <div class="content">
+  <div class="content bg-white">
     <form action="" class="form-send">
-      <div class="form-send__group">
-        <label class="form-send__label" for="address">Địa chỉ người nhận</label>
-        <input class="form-send__input" id="address" type="text" value="0xCc4FA98B6d67105F11012bnf91205nv9mo04vw..."/>
-        <div class="form-send__button-address">
-          <button class="form-send__button">Paste</button>
-          <button class="form-send__button-scanner"></button>
+      <div class="form-send__content">
+        <div class="form-send__group">
+          <label class="form-send__label" for="address">Địa chỉ người nhận</label>
+          <input class="form-send__input" id="address" type="text" value="0xCc4FA98B6d67105F11012bnf91205nv9mo04vw..."/>
+          <div class="form-send__button-address">
+            <button class="form-send__button">Paste</button>
+            <button class="form-send__button-scanner"></button>
+          </div>
+        </div>
+        <div class="form-send__group">
+          <label class="form-send__label" for="count">Số lượng USDT</label>
+          <input class="form-send__input" id="count" type="text" value="0,001" />
+          <div class="form-send__button-count">
+            <button class="form-send__button">Max</button>
+            <button class="form-send__button">USDT</button>
+          </div>
         </div>
       </div>
-      <div class="form-send__group">
-        <label class="form-send__label" for="count">Số lượng USDT</label>
-        <input class="form-send__input" id="count" type="text" value="0,001" />
-        <div class="form-send__button-count">
-          <button class="form-send__button">Max</button>
-          <button class="form-send__button">USDT</button>
-        </div>
-      </div>
+      <div class="form-send_result">0,47 $</div>
     </form>
   </div>
   
