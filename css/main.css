@@ -1178,6 +1178,7 @@ body {
   -ms-border-radius: .06rem;
   -o-border-radius: .06rem;
 }
+.setting__list--switch li > div,
 .setting__list li button {
   display: flex;
   justify-content: space-between;
@@ -1278,6 +1279,9 @@ body {
 }
 .setting__list--switch {
   margin-top: .23rem;
+}
+.setting__list--switch li > div {
+  padding: .14rem .08rem .14rem .1rem;
 }
 .setting__list--switch li button {
   padding: .14rem .08rem .14rem .1rem;

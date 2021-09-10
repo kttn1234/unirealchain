@@ -55,4 +55,14 @@ $(document).ready(function () {
       $(this).parents('.form-send__group').removeClass('focused');  
     } 
   }) 
+
+  $('.setting__list--switch li div, .transaction__list--switch li').click(function(){
+    var switchCheck = $(this).find('input');
+    if($(switchCheck).prop("checked")) {
+      $(switchCheck).prop("checked", false); 
+    }
+    else {
+      $(switchCheck).prop("checked", true); 
+    }
+  })
 });
